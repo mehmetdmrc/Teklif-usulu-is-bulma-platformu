@@ -1,4 +1,4 @@
-# Kay-p-bulma-platformu
+# Kayıp-bulma-platformu
 FindIt – Kayıp Eşya ve Sahip Bulma Platformu
 Proje Planı ve Yönetim Raporu
 
