@@ -100,19 +100,3 @@ Bu sistem, klasik iş ilan sitelerinden farklı olarak **“ters açık artırma
 * Gerçek dünya örneklerinde (Freelancer, Upwork, Armut) benzeri işleyiş.
 
 ---
-
-## 📦 GitHub Kullanımı
-
-Proje GitHub’da şu şekilde yönetilecektir:
-
-* `main` branch: Yayınlanan sürüm
-* `dev` branch: Geliştirme aşaması
-* Commit mesajları: `feat: yeni özellik eklendi`, `fix: hata düzeltildi` formatında tutulacak.
-* README dosyası: Kurulum ve kullanım bilgilerini içerecek.
-
----
-
-## 🧾 Lisans
-
-Bu proje eğitim amaçlı geliştirilmiştir.
-Ticari kullanım için geliştirici onayı gereklidir.
