@@ -1,137 +1,118 @@
-# Kayıp-bulma-platformu
-# FindIt – Kayıp Eşya ve Sahip Bulma Platformu
+# 💼 Açık Artırmalı İş Platformu (Freelancer Ters Açık Artırma Sistemi)
 
-Bu repository, "FindIt" projesi için hazırlanan **Proje Planı Raporu** içermektedir.
+## 🎯 Proje Tanımı
 
----
+Bu proje, işverenlerin iş ilanı verebildiği ve işçilerin (freelancer veya hizmet sağlayıcıların) bu ilanlara teklif sunabildiği bir **açık artırma sistemi** geliştirmeyi amaçlamaktadır.
+İşveren, yapılacak işi tanımlar; işçiler ise işi ne kadar ücretle yapabileceklerini teklif ederler. İşveren en uygun teklif sahibini seçerek işi başlatır.
 
-## 1. Proje Fikri Belirleme + Proje Planı Raporu
+Bu sistem, klasik iş ilan sitelerinden farklı olarak **“ters açık artırma”** mantığıyla çalışır:
 
-**Proje Tanımı:**  
-FindIt, kullanıcıların kayıp veya bulunan eşyaları paylaşarak sahiplerine ulaşmasına yardımcı olan bir web platformudur. Kullanıcılar kayıp eşya ilanı oluşturabilir, kategori ve konum bilgisine göre arama yapabilir ve mesajlaşma veya iletişim formu ile ilan sahiplerine ulaşabilir.
-
-**Projenin Amacı:**  
-- Kayıp eşyaların kısa sürede sahiplerine ulaştırılmasını sağlamak  
-- Toplumda yardımlaşma ve güven duygusunu artırmak  
-- Kağıt ilan veya sosyal medya paylaşımlarına alternatif, dijital ve organize bir sistem oluşturmak
-
-**Hedef Kitle:**  
-- Günlük yaşamda eşyalarını sıkça kaybeden bireyler  
-- Kayıp eşya bulan ve sahibine ulaştırmak isteyen kişiler  
-- Belediyeler, üniversiteler, kafeler veya alışveriş merkezleri gibi yoğun alanlarda kayıp eşya yönetimi yapan kurumlar
-
-### SMART Hedefler
-
-| Hedef | Özellik | Ölçüt | Gerçekleşme Süresi | Ulaşılabilirlik | İlgililik |
-|-------|---------|-------|------------------|----------------|-----------|
-| 3 ay içinde temel web platformunu (MVP) yayına almak | MVP sürümü hazır | MVP sürümü hazır | 3 ay | Gerçekçi | Evet |
-| Kullanıcıların %70’inin kayıt işlemini 2 dakikadan kısa sürede tamamlaması | Kullanıcı testleri | Başarı oranı %70 | 2. ay | Evet | Evet |
-| İlk 6 ayda en az 100 aktif ilan oluşturulması | Veri takibi | 100 ilan | 6 ay | Evet | Evet |
-
-**Ana Fonksiyonlar (MVP):**  
-- Kullanıcı kaydı ve giriş sistemi  
-- Kayıp / Bulunan ilanı oluşturma  
-- İlanlara fotoğraf ekleme  
-- Kategori ve konuma göre arama  
-- Basit iletişim formu veya mesajlaşma  
-- İlan düzenleme / silme  
-- Yönetici paneli (ilan onayı / düzenleme)
-
-**Zaman Planı:**
-
-| Aşama | Açıklama | Süre |
-|-------|----------|------|
-| 1. Hafta | Proje planlama ve analiz | 1 hafta |
-| 2–3. Hafta | Arayüz tasarımı (wireframe + mockup) | 2 hafta |
-| 4–6. Hafta | Frontend geliştirme (HTML, CSS, JS) | 3 hafta |
-| 7–9. Hafta | Backend geliştirme (veritabanı, ilan sistemi) | 3 hafta |
-| 10. Hafta | Test, hata düzeltme, son teslim | 1 hafta |
+* Fiyat düşürme rekabeti sağlanır.
+* İşveren uygun maliyetli, kaliteli iş gücü bulur.
+* İşçi kendine uygun işlere teklif vererek kazanç sağlar.
 
 ---
 
-## 2. Bilgi Mimarisi + Sitemap + User Flow
+## 🎯 Hedef Kitle
 
-**Amaç:**  
-Projede kullanıcıların siteyi nasıl kullanacağını anlamak ve sayfa yapısını tasarlamak.
-
-**Sitemap:**  
-Ana Sayfa, Eşya Ara, İlan Ver, Kullanıcı Profili, Yönetici Paneli, Yardım, Hakkında
-
-**User Flow Örnekleri:**  
-- Ana Sayfa → Eşya Ara → Filtreleme → İlan Detay → Mesajlaşma  
-- Ana Sayfa → İlan Ver → Fotoğraf yükleme → Form doldurma → Onay
-
-**Sayfa Hiyerarşisi:**  
-- Ana Sayfa  
-  - Kayıp Eşyalar  
-    - İlan Detayı  
-  - Bulunan Eşyalar  
-    - İlan Detayı  
-  - İlan Ver (Form)  
-  - Profilim  
-  - Mesajlar  
-  - Hakkında / Yardım  
-  - Yönetici Paneli
-
-**İçerik Stratejisi:**  
-Her sayfa kullanıcıya net bilgi ve işlev sunar
+* **İşverenler:** Kısa süreli veya proje bazlı iş yaptırmak isteyen bireyler, küçük işletmeler, ajanslar.
+* **Freelancerlar / İşçiler:** Yazılım geliştiriciler, tasarımcılar, editörler, tamirciler, çevirmenler vb.
+* **Platform Yöneticileri:** Sistemin güvenliğini ve doğruluğunu sağlayan admin kullanıcılar.
 
 ---
 
-## 3. Product Backlog + Kanban Planı
+## ⚙️ Temel Özellikler
 
-**User Stories Örnekleri:**  
-- Kullanıcı kayıt ve giriş  
-- İlan oluşturma  
-- Arama ve filtreleme  
-- Mesajlaşma  
-- Yönetici onayı  
-- Profil düzenleme  
-- Responsive tasarım  
-- Bildirim sistemi  
-- Yardım sayfası
-
-**Kanban Tablosu:**
-
-| To Do | Doing | Done |
-|-------|-------|------|
-| Kullanıcı kayıt & giriş | Arama ve filtreleme | Bildirim sistemi |
-| İlan oluşturma modülü | Profil sayfası | Yardım sayfası |
-| Mesajlaşma sistemi | | |
-
-**WIP Limiti:** Doing sütunu için en fazla 3 görev aynı anda işlenebilir
+* Üyelik sistemi (işveren / işçi)
+* İş ilanı oluşturma ve açıklama ekleme
+* Teklif verme (işçiler tarafından)
+* Teklif yönetimi ve seçim
+* Mesajlaşma modülü
+* Ödeme işlemleri (örnek olarak sanal cüzdan veya banka havalesi entegrasyonu)
+* Yönetici paneli (kullanıcı, ilan ve şikayet yönetimi)
 
 ---
 
-## 4. Risk Analizi + Paydaş Haritası
+## 🧩 Teknolojiler
 
-**Olası Riskler ve Önlemler:**
-
-| No | Risk Başlığı | Risk Açıklaması | Risk Türü | Olasılık | Etki | Risk Seviyesi | Çözüm / Önlem |
-|----|--------------|----------------|-----------|----------|------|---------------|----------------|
-| R01 | Sunucu hatası | Sunucu çökmesi veya barındırma hizmeti kesilmesi | Teknik | Orta | Yüksek | Yüksek | Güvenilir hosting ve yedekleme sistemi kullanmak |
-| R02 | Veritabanı hatası | Verilerin yanlış veya eksik kaydedilmesi | Teknik | Düşük | Yüksek | Orta | Veritabanı yedekleme ve test senaryoları hazırlamak |
-| R03 | Zaman gecikmesi | Proje teslim tarihine yetişememe | Zaman | Orta | Orta | Orta | Haftalık sprint kontrolü yapmak |
-| R04 | Kullanıcı verilerinin sızması | Kişisel verilerin korunmaması | Güvenlik | Düşük | Yüksek | Yüksek | Şifreleme (SSL) ve güçlü parola politikası uygulamak |
-| R05 | İletişim eksikliği | Ekip arasında bilgi akışının zayıf olması | İletişim | Orta | Orta | Orta | Düzenli toplantılar ve dijital araçlar kullanmak |
-| R06 | Kullanıcı ilgisizliği | Platformun yeterli kullanıcıya ulaşamaması | Pazarlama | Orta | Orta | Orta | Sosyal medya kampanyaları ve işbirlikleri |
-| R07 | Hatalı kullanıcı girişi | Eksik veya yanlış ilan verileri | Kullanıcı | Yüksek | Düşük | Orta | Form doğrulama ve hata mesajları |
-| R08 | Cihaz uyumsuzluğu | Mobil cihazlarda site görünümünün bozulması | Teknik | Orta | Orta | Orta | Responsive testleri yapmak |
-
-**Paydaş Haritası:**
-
-| Paydaş | Rol / Katkı | İletişim Düzeyi | Öncelik |
-|--------|-------------|----------------|---------|
-| Proje Yöneticisi | Planlama, zaman yönetimi, görev ataması | Yüksek | Yüksek |
-| Web Tasarımcı | Arayüz (UI/UX) tasarımı | Orta | Orta |
-| Yazılım Geliştirici | Backend & frontend kodlama | Yüksek | Yüksek |
-| Sistem Yöneticisi | Sunucu yönetimi ve veritabanı desteği | Orta | Orta |
-| Kullanıcılar | Siteyi aktif olarak kullanan bireyler | Düşük | Yüksek |
-| Kurumlar | Platformun tanıtımı ve kullanımı | Düşük | Orta |
-| Sosyal Medya Ekibi | Tanıtım, duyuru ve kullanıcı etkileşimi | Orta | Orta |
+* **Frontend:** HTML, CSS, JavaScript (React veya Vue.js)
+* **Backend:** PHP (Laravel) veya Node.js (Express)
+* **Veritabanı:** MySQL veya MongoDB
+* **Versiyon Kontrol:** Git & GitHub
+* **Tasarım:** Figma / Wireframe (UX planlaması için)
 
 ---
 
-## Sonuç
+## 👥 Ekip Üyeleri ve Görev Dağılımı
 
-Bu rapor, **FindIt platformunun fikir, planlama, bilgi mimarisi, backlog ve risk analiz aşamalarını detaylı şekilde** sunar. Proje yönetimi, kullanıcı deneyimi ve risk yönetimi becerilerini geliştirmeye yöneliktir.
+| Üye Adı | Görevi                                  | Açıklama                                            |
+| ------- | --------------------------------------- | --------------------------------------------------- |
+| Mehmet  | Proje Yöneticisi / Full Stack Developer | Genel proje yönetimi, backend & frontend geliştirme |
+| Üye 2   | UI/UX Designer                          | Arayüz tasarımı, kullanıcı akışı                    |
+| Üye 3   | Veri Tabanı Uzmanı                      | MySQL şema tasarımı, veri güvenliği                 |
+| Üye 4   | Test Sorumlusu                          | Hata tespiti ve kullanıcı deneyimi testleri         |
+
+---
+
+## 📅 Zaman Çizelgesi (Tahmini)
+
+| Aşama                             | Süre    | Açıklama                         |
+| --------------------------------- | ------- | -------------------------------- |
+| 1. Analiz ve planlama             | 1 hafta | Gereksinimlerin belirlenmesi     |
+| 2. Wireframe & Mockup             | 1 hafta | Arayüz tasarımı                  |
+| 3. Veritabanı ve backend kurulumu | 2 hafta | API geliştirme                   |
+| 4. Frontend geliştirme            | 3 hafta | Sayfa yapısı, dinamik içerikler  |
+| 5. Test ve hata ayıklama          | 1 hafta | Kullanıcı testleri               |
+| 6. Yayına hazırlık                | 1 hafta | GitHub yükleme, final kontroller |
+
+**Toplam Süre:** 9 hafta
+
+---
+
+## 💰 Bütçe Dağılımı (Tahmini)
+
+| Kalem              | Tahmini Tutar          | Açıklama                      |
+| ------------------ | ---------------------- | ----------------------------- |
+| Domain & Hosting   | 1500 TL                | Yıllık barındırma ve alan adı |
+| Yazılım Geliştirme | 0 TL (öğrenci projesi) | Kendi geliştirme katkısı      |
+| Tasarım Araçları   | 500 TL                 | Figma / Adobe XD lisansı      |
+| Güvenlik & SSL     | 300 TL                 | HTTPS sertifikası             |
+| **Toplam**         | **2300 TL**            | —                             |
+
+---
+
+## ⚠️ Risk Analizi ve Çözümleri
+
+| Risk                            | Etki   | Çözüm                                    |
+| ------------------------------- | ------ | ---------------------------------------- |
+| Veri güvenliği zafiyeti         | Yüksek | Şifreleme (bcrypt), SSL, güvenli giriş   |
+| Kullanıcı sahteciliği           | Orta   | E-posta doğrulama, kimlik kontrolü       |
+| Proje gecikmesi                 | Orta   | Agile sprint takvimi ile yönetim         |
+| Hatalı teklif / ödeme sorunları | Yüksek | Manuel onay, escrow sistemi entegrasyonu |
+
+---
+
+## 📈 Beklenen Sonuçlar
+
+* Güvenilir, açık artırma temelli iş bulma platformu.
+* Kullanıcı dostu arayüz.
+* Freelance pazarında fark yaratan bir model.
+* Gerçek dünya örneklerinde (Freelancer, Upwork, Armut) benzeri işleyiş.
+
+---
+
+## 📦 GitHub Kullanımı
+
+Proje GitHub’da şu şekilde yönetilecektir:
+
+* `main` branch: Yayınlanan sürüm
+* `dev` branch: Geliştirme aşaması
+* Commit mesajları: `feat: yeni özellik eklendi`, `fix: hata düzeltildi` formatında tutulacak.
+* README dosyası: Kurulum ve kullanım bilgilerini içerecek.
+
+---
+
+## 🧾 Lisans
+
+Bu proje eğitim amaçlı geliştirilmiştir.
+Ticari kullanım için geliştirici onayı gereklidir.
