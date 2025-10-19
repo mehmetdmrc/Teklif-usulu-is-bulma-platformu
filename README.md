@@ -1,4 +1,4 @@
-# 💼 Açık Artırmalı İş Platformu (Freelancer Ters Açık Artırma Sistemi)
+# 💼 Açık Artırmalı İş Platformu
 
 ## 🎯 Proje Tanımı
 
@@ -16,7 +16,7 @@ Bu sistem, klasik iş ilan sitelerinden farklı olarak **“ters açık artırma
 ## 🎯 Hedef Kitle
 
 * **İşverenler:** Kısa süreli veya proje bazlı iş yaptırmak isteyen bireyler, küçük işletmeler, ajanslar.
-* **Freelancerlar / İşçiler:** Yazılım geliştiriciler, tasarımcılar, editörler, tamirciler, çevirmenler vb.
+* **İşçiler:** Yazılım geliştiriciler, tasarımcılar, editörler, tamirciler, çevirmenler vb.
 * **Platform Yöneticileri:** Sistemin güvenliğini ve doğruluğunu sağlayan admin kullanıcılar.
 
 ---
@@ -71,7 +71,7 @@ Bu sistem, klasik iş ilan sitelerinden farklı olarak **“ters açık artırma
 
 ## 💰 Bütçe Dağılımı (Tahmini)
 
-| Kalem              | Tahmini Tutar          | Açıklama                      |
+| Gider Türü              | Tahmini Tutar          | Açıklama                      |
 | ------------------ | ---------------------- | ----------------------------- |
 | Domain & Hosting   | 1500 TL                | Yıllık barındırma ve alan adı |
 | Yazılım Geliştirme | 0 TL (öğrenci projesi) | Kendi geliştirme katkısı      |
